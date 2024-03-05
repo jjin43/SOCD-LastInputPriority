@@ -13,7 +13,6 @@ if not (A_IsAdmin or RegExMatch(full_command_line, " /restart(?!`S)"))
     ExitApp
 }
 
-#SingleInstance Force
 InstallKeybdHook
 SendMode "Input"
 A_MaxHotkeysPerInterval := 1000
@@ -30,52 +29,90 @@ Tray.Add("Exit Script", ExitScript)
 left := "a"
 right := "d"
 
-updownEnabled:=0
 running:=1
 return
 
 
-
+; Move Left
 ~$a::   ; << modify to desired 'left' key
 {
+    global reverse := 0
     Critical
-    while (true){
+    LeftLoop:
         if (!GetKeyState(left, "P")){
+            if(GetKeyState(left)){
+                Send "{" left " up}"
+            }
             return
         }
         else if(GetKeyState(right, "P") and !GetKeyState(right)){
-            Send "{" left " up}"
+            if(GetKeyState(left))
+                Send "{" left " up}"
             Send "{" right " down}"
         }
         else if(!GetKeyState(right, "P") and GetKeyState(right)){
             Send "{" right " up}"
             Send "{" left " down}"
         }
-    }
+        else if(GetKeyState(left, "P") and !GetKeyState(right, "P") and !GetKeyState(left)){
+            if(GetKeyState(right))
+                Send "{" right " Up}"
+            Send "{" left " down}"
+        }
+        else if (GetKeyState(left, "P") and GetKeyState(right, "P") and GetKeyState(left)=GetKeyState(right)){
+            if(GetKeyState(left))
+                Send "{" left " Up}"
+            Send "{" right " down}"
+        }
+        else
+            goto LeftLoop
+    goto LeftLoop
+    
 }
 
+
+; Move Right
 ~$d::   ; << modify to desired 'right' key
 {
     Critical
-    while (true){
+    RightLoop:
         if (!GetKeyState(right, "P")){
+            if(GetKeyState(right)){
+                Send "{" right " up}"
+            }
             return
         }
         else if(GetKeyState(left, "P") and !GetKeyState(left)){
-            Send "{" right " up}"
+            if(GetKeyState(right))
+                Send "{" right " up}"
             Send "{" left " down}"
         }
         else if(!GetKeyState(left, "P") and GetKeyState(left)){
             Send "{" left " up}"
             Send "{" right " down}"
         }
-    }
+        else if(GetKeyState(right, "P") and !GetKeyState(left, "P") and !GetKeyState(right)){
+            if(GetKeyState(left))
+                Send "{" left " Up}"
+            Send "{" right " down}"
+        }
+        else if (GetKeyState(right, "P") and GetKeyState(left, "P") and GetKeyState(right)=GetKeyState(left)){
+            if(GetKeyState(right))
+                Send "{" right " Up}"
+            Send "{" left " down}"
+        }
+        else
+            goto RightLoop
+    goto RightLoop
 }
 
 
+
+; Menu Functions
+
 Help(A_ThisMenuItem, A_ThisMenuItemPos, MyMenu)
 {
-    MsgBox("SCOB - LastInputPriorty [L/R Only Version]`nAuthor: Zow`n`nCurrent Key Binds:`nLeft: [ " left " ]`t`tRight: [ " right " ]`nF9: Pause Script`nF10: Exit Script`n`nAutoHotKey v2.0`nCommunity opensource project, do not use for commercial purpose.", "SCOB - LIP:  Help", 0)
+    MsgBox("SCOB - LastInputPriorty [L/R]`nAuthor: Zow`n`nCurrent Key Binds:`nLeft: [ " left " ]`t`tRight: [ " right " ]`nF9: Pause Script`nF10: Exit Script`n`nAutoHotKey v2.0`nCommunity opensource project, do not use for commercial purpose.", "SCOB - LIP:  Help", 0)
 }
 
 PauseScript(A_ThisMenuItem, A_ThisMenuItemPos, MyMenu)
