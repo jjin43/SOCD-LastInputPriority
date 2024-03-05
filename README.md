@@ -1,8 +1,9 @@
 # SOCD - Last Input Priority
-AutoHotKey v.2.0 Script for Last Input Priority SOCD Resolution on Keyboard   
-Opensource project, do not use for comercial purposes.  
-
-* Up/Down LIP functionality WIP  
+AutoHotKey v.2.0 Script for Last Input Priority SOCD Resolution on PC
+Author: Zow / jjin43
+* Supports L/R Last Input Priority
+* NO LONGER A PRIVILEGE FOR HITBOX USERS
+* Up/Down LIP functionality [WIP] 
 
 ## What is SOCD / Last Input Priority?
 SOCD means "Simultaneous Opposing Cardinal Directions." It is the physical actuation of cardinal directions that are separate and opposite to each other - ie, pressing Left and Right at the same time. Basically, it's how 'left' and  'right' inputs are handled when both keys are pressed at the same time.  
@@ -18,4 +19,4 @@ You can check the currently set keys in `Help`
 [AHK List of Keys Variable Names](https://www.autohotkey.com/docs/v1/KeyList.htm#keyboard)  
 
 ## Issues
-CPU Usage is rather high for a scrpit this sizes, due to the large amount of inputs in Fighting Gamems, and the keyboardhook.
+CPU Usage is rather high for a script this size, mostly due to the large number of inputs in Fighting Games and the keyboardhook requirement.
