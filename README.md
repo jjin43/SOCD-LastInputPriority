@@ -1,7 +1,7 @@
 # SOCD - Last Input Priority
 AutoHotKey v.2.0 Script for Last Input Priority SOCD Resolution on PC
 Author: Zow / jjin43
-* Supports L/R Last Input Priority
+* Supports L/R Last Input Priority - Default: `Left = [ a ]` `Right = [ b ]`  
 * NO LONGER A PRIVILEGE FOR HITBOX USERS
 * Up/Down LIP functionality [WIP] 
 
