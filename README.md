@@ -1,9 +1,9 @@
 # SOCD - Last Input Priority
-AutoHotKey v.2.0 Script for Last Input Priority SOCD Resolution on PC
+AutoHotKey v.2.0 Script for Last Input Priority SOCD Resolution on PC  
 Author: Zow / jjin43
 * Supports L/R Last Input Priority - Default: `Left = [ a ]` `Right = [ b ]`  
 * NO LONGER A PRIVILEGE FOR HITBOX USERS
-* Up/Down LIP functionality [WIP] 
+* Up/Down LIP currently not supported [WIP]
 
 ## What is SOCD / Last Input Priority?
 SOCD means "Simultaneous Opposing Cardinal Directions." It is the physical actuation of cardinal directions that are separate and opposite to each other - ie, pressing Left and Right at the same time. Basically, it's how 'left' and  'right' inputs are handled when both keys are pressed at the same time.  
