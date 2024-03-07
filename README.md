@@ -1,10 +1,9 @@
 # SOCD - Last Input Priority
 AutoHotKey v.2.0 Script for Last Input Priority SOCD Resolution on PC  
-Author: Zow / jjin43
-* NO LONGER A PRIVILEGE FOR HITBOX USERS
-* Supports L/R Last Input Priority - Default: `Left = [ a ]` `Right = [ b ]`  
-* Both L/R Windows Key disabled, Caplock disabled while scrpit is running.
-* Up/Down LIP currently not supported 
+Author: Zow / jjin43  
+* NO LONGER A PRIVILEGE FOR HITBOX USERS  
+* Supports L/R U/D Last Input Priority - Default: `Left = [ a ]` `Right = [ b ]` `Up = [ space ]` `Down = [ s ]`  
+* Caplock disabled while scrpit is running due to AHK input limitations.  
 
 ## What is SOCD / Last Input Priority?
 SOCD means "Simultaneous Opposing Cardinal Directions." It is the physical actuation of cardinal directions that are separate and opposite to each other - ie, pressing Left and Right at the same time. Basically, it's how 'left' and  'right' inputs are handled when both keys are pressed at the same time.  
@@ -13,12 +12,17 @@ In most cases, both directions are not initially actuated at the same time. When
 Ex:  
 Holding 'Left' then inputting 'Right' = Character will move right until D is released. NORMALLY this would result in a 'neutral' input.   
 
+## Installation
+(1) Download and extract the zip
+(2) Run both SCOB-LIP-LR.exe and SCOB-LIP-UD.exe for Full LIP
+Both SCOB-LIP-LR and UD MUST BOTH BE RUNNING, due to AHK not supporting multithreading.
 
 ## Customization
 To modify directional keys, modify variables and hotkey declarations. (AHK v2.0 required for compiling to executable)  
 You can check the currently set keys in `Help`  
 [AHK List of Keys Variable Names](https://www.autohotkey.com/docs/v1/KeyList.htm#keyboard)  
+[AHK Controller Variables (Needs to do some set up)](https://www.autohotkey.com/docs/v1/KeyList.htm#Joystick)
 
 ## Issues
 * CPU Usage is rather high for a script this size, mostly due to the large number of inputs in Fighting Games and the keyboardhook requirement.
-* When Caplock is On, the lowercase default inputs will cause Caplock flickering. Caplock is disabled while running to prevent this.
+* When Caplock is On, the lowercase default inputs will cause Caplock flickering. Caplock is disabled and kept off while running to prevent this.

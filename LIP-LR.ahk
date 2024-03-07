@@ -109,11 +109,11 @@ return
     goto RightLoop
 }
 
-; disable windows keys
-LWin::Send "{Blind}{vkE8}"
-RWin::Send "{Blind}{vkE8}"
-
 ; Menu Functions
+
+; Enable these functions to disable windows key while scrpit running
+; ~LWin::Send "{Blind}{vkE8}"
+; ~RWin::Send "{Blind}{vkE8}"
 
 Help(A_ThisMenuItem, A_ThisMenuItemPos, MyMenu)
 {
@@ -131,8 +131,8 @@ PauseFunc(){
         running:=1
         Hotkey("a", "On")
         Hotkey("d", "On")
-        Hotkey("LWin", "On")
-        Hotkey("RWin", "On")
+        ; Hotkey("LWin", "On")
+        ; Hotkey("RWin", "On")
         SetCapsLockState "AlwaysOff"
         Tray.UnCheck("Pause Script")
     }
@@ -140,8 +140,8 @@ PauseFunc(){
         running:=0
         Hotkey("a", "Off")
         Hotkey("d", "Off")
-        Hotkey("LWin", "Off")
-        Hotkey("RWin", "Off")
+        ; Hotkey("LWin", "Off")
+        ; Hotkey("RWin", "Off")
         SetCapsLockState "Off"
         Tray.Check("Pause Script")
     }  
