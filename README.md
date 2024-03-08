@@ -14,9 +14,9 @@ Holding 'Left' then inputting 'Right' = Character will move right until D is rel
 
 ## Installation
 (1) Download and extract the [Latest Release](https://github.com/jjin43/SOCD-LastInputPriority/releases/latest)  
-(2) Run both SCOB-LIP-LR.exe and SCOB-LIP-UD.exe for Full LIP  
+(2) Run both SCOD-LIP-LR.exe and SCOD-LIP-UD.exe for Full LIP  
 NOTE:  
-SCOB-LIP-LR AND UD MUST BOTH BE RUNNING, due to AHK not supporting multithreading. LR and UD work independently if only 1 is needed.  
+SCOD-LIP-LR AND UD MUST BOTH BE RUNNING, due to AHK not supporting multithreading. LR and UD work independently if only 1 is needed.  
 
 ## Customization
 To modify directional keys, modify variables and hotkey declarations. Follow directions in the comments, modify the variables at the top and the corresponding function name.  

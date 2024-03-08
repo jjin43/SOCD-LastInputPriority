@@ -117,7 +117,7 @@ return
 
 Help(A_ThisMenuItem, A_ThisMenuItemPos, MyMenu)
 {
-    MsgBox("SCOB - LastInputPriorty [L/R]`nAuthor: Zow`n`nCurrent Key Binds:`nLeft: [ " left " ]`t`tRight: [ " right " ]`nF9: Pause Script`nF10: Exit Script`n`nBoth [WindowsKey] and [Caplock] are turned off when scrpit is running.`n`nAutoHotKey v2.0`nCommunity opensource project, do not use for commercial purpose.", "SCOB - LIP:  Help", 0)
+    MsgBox("SCOD - LastInputPriorty [L/R]`nAuthor: Zow`n`nCurrent Key Binds:`nLeft: [ " left " ]`t`tRight: [ " right " ]`nF9: Pause Script`nF10: Exit Script`n`nBoth [WindowsKey] and [Caplock] are turned off when scrpit is running.`n`nAutoHotKey v2.0`nCommunity opensource project, do not use for commercial purpose.", "SCOD - LIP:  Help", 0)
 }
 
 PauseScript(A_ThisMenuItem, A_ThisMenuItemPos, MyMenu)
