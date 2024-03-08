@@ -39,7 +39,6 @@ return
 ; Move Left
 ~$a::   ; << modify to desired 'left' key
 {
-    global reverse := 0
     Critical
     LeftLoop:
         if (!GetKeyState(left, "P")){
