@@ -1,6 +1,7 @@
 # SOCD - Last Input Priority
-AutoHotKey v.2.0.11 Script for Last Input Priority SOCD Resolution on PC  
+AHK Scripts for Last Input Priority SOCD Resolution on PC  
 Author: Zow / jjin43  
+AutoHotKey v.2.0.11   
 * NO LONGER A PRIVILEGE FOR HITBOX USERS  
 * Supports L/R and U/D Last Input Priority - Default: `Left = [ a ]` `Right = [ b ]` `Up = [ space ]` `Down = [ s ]`  
 * Caplock disabled while script is running due to AHK input limitations.  
@@ -19,8 +20,8 @@ NOTE:
 SCOD-LIP-LR AND UD MUST BOTH BE RUNNING, due to AHK not supporting multithreading. LR and UD work independently if only 1 is needed.  
 
 ## Customization
-To modify directional keys, modify variables and hotkey declarations. Follow directions in the comments, modify the variables at the top and the corresponding function name.  
-(AHK v2.0 required for compiling to executable)  
+To change the directional keys, modify variables and hotkey declarations in the source coode. Follow directions in the comments, modify the variables at the top and the corresponding function name.    
+(AHK v2.0.11 + required for compiling to executable)  
 You can check the currently set keys in `Help`  
 [AHK List of Keys Variable Names](https://www.autohotkey.com/docs/v1/KeyList.htm#keyboard)  
 [AHK Controller Variables (Needs to do some set up)](https://www.autohotkey.com/docs/v1/KeyList.htm#Joystick)
