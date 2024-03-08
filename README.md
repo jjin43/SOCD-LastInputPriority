@@ -1,3 +1,4 @@
+![alt text](https://cdn.shopify.com/s/files/1/0166/4408/files/leftplusright_1024x1024.png?v=1568750688)
 # SOCD - Last Input Priority
 AHK Scripts for Last Input Priority SOCD Resolution on PC  
 Author: Zow / jjin43  
