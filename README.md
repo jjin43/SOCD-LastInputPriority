@@ -10,6 +10,7 @@ AutoHotKey v.2.0.11
 ## What is SOCD / Last Input Priority?
 SOCD means "Simultaneous Opposing Cardinal Directions." It is the physical actuation of cardinal directions that are separate and opposite to each other - ie, pressing Left and Right at the same time. Basically, it's how 'left' and  'right' inputs are handled when both keys are pressed at the same time.  
 In most cases, both directions are not initially actuated at the same time. When the second (or most recent) direction you pressed in the SOCD overrides the first, it is called Last Input Priority Resolution.  
+SOCD resolutions are usually applied at the hardware level on arcade controllers, behind a $100+ paywall. This script brings the SOCD-LIP resolution to the PC platform natively for free.  
 [More on SOCD](https://www.hitboxarcade.com/blogs/support/what-is-socd)  
 Ex:  
 Holding 'Left' then inputting 'Right' = Character will move right until D is released. NORMALLY this would result in a 'Neutral' input.   
