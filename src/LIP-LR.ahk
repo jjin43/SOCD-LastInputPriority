@@ -3,14 +3,12 @@
 #Include menu.ahk
 #Include inputs.ahk
 
-setUp()    ; Check for admin privileges and relaunch as admin if not already
+SetUp()    ; Check for admin privileges and relaunch as admin if not already
 
 ; Hotkeys
 #UseHook true
-Hotkey left, inputLeft, "On"
-Hotkey right, inputRight, "On"
-Hotkey pauseButton, pauseToggle, "On"
-Hotkey exitButton, exitFunc, "On"
+Hotkey left, LIP_SOCD.Bind(,right), "On"
+Hotkey right, LIP_SOCD.Bind(,left), "On"
 
 
 

@@ -1,8 +1,10 @@
 #Requires AutoHotkey v2.0
 
+#Include edit_gui.ahk
+
 ; Set ups and privilege check
 
-setUp(){
+SetUp(){
     ; Launch as admin
     #SingleInstance prompt
 
@@ -24,6 +26,9 @@ setUp(){
     SetCapsLockState "AlwaysOff"
     A_MaxHotkeysPerInterval := 2000    ; increase the limit to meet fighting games needs
     menuSetUp()
+
+    Hotkey pauseButton, pauseToggle, "On"
+    Hotkey exitButton, exitFunc, "On"
 }
 
 menuSetUp(){
@@ -31,6 +36,7 @@ menuSetUp(){
     global Tray:= A_TrayMenu
     Tray.Delete()
     Tray.Add("About", about)
+    Tray.Add("Edit Key Binds", EditKeyBinds)
     Tray.Add("Pause", pauseToggle)
     Tray.Add("Exit", exitFunc)
 }
