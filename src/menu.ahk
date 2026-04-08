@@ -31,10 +31,8 @@ menuSetUp(){
     global Tray:= A_TrayMenu
     Tray.Delete()
     Tray.Add("About", about)
-    Tray.Add("WinLock", WinKeyToggle)
     Tray.Add("Pause", pauseToggle)
     Tray.Add("Exit", exitFunc)
-    Tray.Check("WinLock")
 }
 
 
@@ -58,21 +56,4 @@ pauseToggle(*){
 exitFunc(*){
     ; graceful exit
     ExitApp
-}
-
-WinKeyToggle(*){
-    global winLock
-    if (winLock=0){
-        Hotkey lWin, "On"
-        Hotkey rWin, "On"
-        winLock:=1
-        Tray.Check("WinLock")
-    }
-    else{
-        Hotkey lWin, "Off"
-        Hotkey rWin, "Off"
-        winLock:=0
-        Tray.Uncheck("WinLock")
-    }
-    
 }

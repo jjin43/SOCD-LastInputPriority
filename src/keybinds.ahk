@@ -9,5 +9,3 @@ pauseButton := "F9"
 exitButton := "F10"
 lWin := "~LWin"
 rWin := "~RWin"
-
-winLock := 1   ; global variable to track win key lock state, default on
