@@ -6,7 +6,7 @@ AutoHotKey v.2.0.23
   
 * Supports L/R and U/D Last Input Priority - Default: `Left = [ a ]` `Right = [ d ]` `Up = [ space ]` `Down = [ s ]` `F9 = Pause/Unpause` `F10 = Exit`  
 * Left and Right are supported separately from Up and Down, choose only one .
-* Caplock and windows key are disabled by default to prevent accidental presses at the software level, can be toggled in the right-click icon menu.
+* Caplock are disabled by default to prevent accidental presses at the software level, can be toggled in the right-click icon menu.
 **[Download Latest Release](https://github.com/jjin43/SOCD-LastInputPriority/releases/latest)**  
 
 ## What is SOCD / Last Input Priority SOCD?
