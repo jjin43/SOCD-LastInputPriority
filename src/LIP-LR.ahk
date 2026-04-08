@@ -11,9 +11,6 @@ Hotkey left, inputLeft, "On"
 Hotkey right, inputRight, "On"
 Hotkey pauseButton, pauseToggle, "On"
 Hotkey exitButton, exitFunc, "On"
-Hotkey lWin, doNothing, "On"
-Hotkey rWin, doNothing, "On"
-
 
 
 
